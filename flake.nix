@@ -23,6 +23,11 @@
   in
   {
     devShells.${system} = {
+      default = zshDevShell {
+        packages = [
+          nixvimConfig
+        ];
+      };
       rust = zshDevShell {
         packages = [
           nixvimConfig
